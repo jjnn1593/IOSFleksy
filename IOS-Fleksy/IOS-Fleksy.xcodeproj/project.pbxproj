@@ -7,6 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		846848BE280AF16C00EB4BF6 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848BD280AF16C00EB4BF6 /* BaseRepository.swift */; };
+		846848BF280AF16C00EB4BF6 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848BD280AF16C00EB4BF6 /* BaseRepository.swift */; };
+		846848C0280AF16C00EB4BF6 /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848BD280AF16C00EB4BF6 /* BaseRepository.swift */; };
+		846848C2280AF19A00EB4BF6 /* UtilsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848C1280AF19A00EB4BF6 /* UtilsRepository.swift */; };
+		846848C3280AF19A00EB4BF6 /* UtilsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848C1280AF19A00EB4BF6 /* UtilsRepository.swift */; };
+		846848C4280AF19A00EB4BF6 /* UtilsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848C1280AF19A00EB4BF6 /* UtilsRepository.swift */; };
+		846848C9280AF22800EB4BF6 /* FactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848C8280AF22800EB4BF6 /* FactoryProvider.swift */; };
+		846848CA280AF22800EB4BF6 /* FactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848C8280AF22800EB4BF6 /* FactoryProvider.swift */; };
+		846848CB280AF22800EB4BF6 /* FactoryProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848C8280AF22800EB4BF6 /* FactoryProvider.swift */; };
+		846848CD280AF26B00EB4BF6 /* MoviesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848CC280AF26B00EB4BF6 /* MoviesProvider.swift */; };
+		846848CE280AF26B00EB4BF6 /* MoviesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848CC280AF26B00EB4BF6 /* MoviesProvider.swift */; };
+		846848CF280AF26B00EB4BF6 /* MoviesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848CC280AF26B00EB4BF6 /* MoviesProvider.swift */; };
+		846848D1280AF31400EB4BF6 /* MovieProviderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848D0280AF31400EB4BF6 /* MovieProviderResponse.swift */; };
+		846848D2280AF31400EB4BF6 /* MovieProviderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848D0280AF31400EB4BF6 /* MovieProviderResponse.swift */; };
+		846848D3280AF31400EB4BF6 /* MovieProviderResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848D0280AF31400EB4BF6 /* MovieProviderResponse.swift */; };
+		846848D7280AF3A600EB4BF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848D6280AF3A600EB4BF6 /* Constants.swift */; };
+		846848D8280AF3A600EB4BF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848D6280AF3A600EB4BF6 /* Constants.swift */; };
+		846848D9280AF3A600EB4BF6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846848D6280AF3A600EB4BF6 /* Constants.swift */; };
 		84CB0BD7280783B2008B6796 /* IOS_FleksyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB0BD6280783B2008B6796 /* IOS_FleksyApp.swift */; };
 		84CB0BD9280783B2008B6796 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84CB0BD8280783B2008B6796 /* ContentView.swift */; };
 		84CB0BDB280783B4008B6796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84CB0BDA280783B4008B6796 /* Assets.xcassets */; };
@@ -49,6 +67,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		846848BD280AF16C00EB4BF6 /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		846848C1280AF19A00EB4BF6 /* UtilsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilsRepository.swift; sourceTree = "<group>"; };
+		846848C8280AF22800EB4BF6 /* FactoryProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryProvider.swift; sourceTree = "<group>"; };
+		846848CC280AF26B00EB4BF6 /* MoviesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesProvider.swift; sourceTree = "<group>"; };
+		846848D0280AF31400EB4BF6 /* MovieProviderResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieProviderResponse.swift; sourceTree = "<group>"; };
+		846848D6280AF3A600EB4BF6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		84CB0BD3280783B2008B6796 /* IOS-Fleksy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "IOS-Fleksy.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84CB0BD6280783B2008B6796 /* IOS_FleksyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOS_FleksyApp.swift; sourceTree = "<group>"; };
 		84CB0BD8280783B2008B6796 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +115,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		846848BC280AF15100EB4BF6 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				846848BD280AF16C00EB4BF6 /* BaseRepository.swift */,
+				846848C1280AF19A00EB4BF6 /* UtilsRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		846848C5280AF1D400EB4BF6 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				846848C7280AF20700EB4BF6 /* Data */,
+				846848C6280AF1F300EB4BF6 /* Factory */,
+				846848CC280AF26B00EB4BF6 /* MoviesProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		846848C6280AF1F300EB4BF6 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				846848C8280AF22800EB4BF6 /* FactoryProvider.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		846848C7280AF20700EB4BF6 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				846848D0280AF31400EB4BF6 /* MovieProviderResponse.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		846848D4280AF36E00EB4BF6 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				846848D6280AF3A600EB4BF6 /* Constants.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		84CB0BCA280783B2008B6796 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +181,9 @@
 		84CB0BD5280783B2008B6796 /* IOS-Fleksy */ = {
 			isa = PBXGroup;
 			children = (
+				846848D4280AF36E00EB4BF6 /* Common */,
+				846848C5280AF1D400EB4BF6 /* Provider */,
+				846848BC280AF15100EB4BF6 /* Repository */,
 				84CB0C05280784ED008B6796 /* Scenes */,
 				84CB0C002807841A008B6796 /* BaseVIP */,
 				84CB0BD6280783B2008B6796 /* IOS_FleksyApp.swift */,
@@ -323,10 +393,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CB0C0E280785FE008B6796 /* MoviesScreenPresenter.swift in Sources */,
+				846848CD280AF26B00EB4BF6 /* MoviesProvider.swift in Sources */,
+				846848C2280AF19A00EB4BF6 /* UtilsRepository.swift in Sources */,
 				84CB0C12280786EC008B6796 /* MoviesScreenInteractor.swift in Sources */,
+				846848BE280AF16C00EB4BF6 /* BaseRepository.swift in Sources */,
 				84CB0BD9280783B2008B6796 /* ContentView.swift in Sources */,
 				84CB0C022807849C008B6796 /* VIPArchitecture.swift in Sources */,
+				846848D7280AF3A600EB4BF6 /* Constants.swift in Sources */,
 				84CB0BD7280783B2008B6796 /* IOS_FleksyApp.swift in Sources */,
+				846848D1280AF31400EB4BF6 /* MovieProviderResponse.swift in Sources */,
+				846848C9280AF22800EB4BF6 /* FactoryProvider.swift in Sources */,
 				84CB0C16280787A9008B6796 /* MoviesScreenCoordinator.swift in Sources */,
 				84CB0C09280785A8008B6796 /* MoviesScreenView.swift in Sources */,
 			);
@@ -337,11 +413,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CB0C0A280785A8008B6796 /* MoviesScreenView.swift in Sources */,
+				846848CE280AF26B00EB4BF6 /* MoviesProvider.swift in Sources */,
+				846848CA280AF22800EB4BF6 /* FactoryProvider.swift in Sources */,
+				846848C3280AF19A00EB4BF6 /* UtilsRepository.swift in Sources */,
+				846848BF280AF16C00EB4BF6 /* BaseRepository.swift in Sources */,
 				84CB0C0F280785FE008B6796 /* MoviesScreenPresenter.swift in Sources */,
 				84CB0C032807849C008B6796 /* VIPArchitecture.swift in Sources */,
 				84CB0C17280787A9008B6796 /* MoviesScreenCoordinator.swift in Sources */,
+				846848D2280AF31400EB4BF6 /* MovieProviderResponse.swift in Sources */,
 				84CB0BE8280783B4008B6796 /* IOS_FleksyTests.swift in Sources */,
 				84CB0C13280786EC008B6796 /* MoviesScreenInteractor.swift in Sources */,
+				846848D8280AF3A600EB4BF6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,10 +432,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				84CB0C10280785FE008B6796 /* MoviesScreenPresenter.swift in Sources */,
+				846848CF280AF26B00EB4BF6 /* MoviesProvider.swift in Sources */,
+				846848C4280AF19A00EB4BF6 /* UtilsRepository.swift in Sources */,
 				84CB0C14280786EC008B6796 /* MoviesScreenInteractor.swift in Sources */,
+				846848C0280AF16C00EB4BF6 /* BaseRepository.swift in Sources */,
 				84CB0BF4280783B5008B6796 /* IOS_FleksyUITestsLaunchTests.swift in Sources */,
 				84CB0C042807849C008B6796 /* VIPArchitecture.swift in Sources */,
+				846848D9280AF3A600EB4BF6 /* Constants.swift in Sources */,
 				84CB0BF2280783B5008B6796 /* IOS_FleksyUITests.swift in Sources */,
+				846848D3280AF31400EB4BF6 /* MovieProviderResponse.swift in Sources */,
+				846848CB280AF22800EB4BF6 /* FactoryProvider.swift in Sources */,
 				84CB0C18280787A9008B6796 /* MoviesScreenCoordinator.swift in Sources */,
 				84CB0C0B280785A8008B6796 /* MoviesScreenView.swift in Sources */,
 			);
