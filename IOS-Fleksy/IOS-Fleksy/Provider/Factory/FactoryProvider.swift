@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FactoryProvider {
-    func createProviderRepository(baseUrl:String) -> BaseRepository?
+    func createProviderRepository(baseUrl:String, typeProvider: FactoryProviderImpl.TypeProviders) -> BaseRepository?
 }
 
 extension FactoryProvider {
@@ -28,8 +28,19 @@ extension FactoryProvider {
 
 struct FactoryProviderImpl: FactoryProvider {
 
-    func createProviderRepository(baseUrl: String ) -> BaseRepository? {
-        return MoviesProvider(baseURL: baseUrl, session: configuredURLSession())
+    enum TypeProviders {
+        case MoviesProvider
+        case ImagesProvider
+    }
+
+    func createProviderRepository(baseUrl: String, typeProvider: TypeProviders) -> BaseRepository? {
+        switch typeProvider {
+        case .MoviesProvider:
+            return MoviesProvider(baseURL: baseUrl, session: configuredURLSession())
+        case .ImagesProvider:
+            return ImagesProvider(baseURL: baseUrl, session: configuredURLSession())
+        }
+
     }
 
 }

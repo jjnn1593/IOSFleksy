@@ -8,29 +8,28 @@
 import Foundation
 
 protocol MoviesScreenInteractorProtocol: InteractorPresenterProtocol {
-    func fetchDataMoviesFromProvider()
+    func fetchDataMoviesFromProvider(page: Int)
 }
 
 final class MoviesScreenInteractorImpl: BaseInteractorProtocol {
 
     weak var presenter: MoviesScreenPresenterProtocol?
-    var provider: MoviesProviderProtocol? = FactoryProviderImpl().createProviderRepository(baseUrl: Constants.RepositoryConfig.baseUrl) as? MoviesProviderProtocol
+    var providerMovies: MoviesProviderProtocol? = FactoryProviderImpl().createProviderRepository(baseUrl: Constants.RepositoryConfig.baseUrl, typeProvider: .MoviesProvider) as? MoviesProviderProtocol
 }
 
 extension MoviesScreenInteractorImpl: MoviesScreenInteractorProtocol {
-    internal func fetchDataMoviesFromProvider() {
+    
+    internal func fetchDataMoviesFromProvider(page: Int) {
 
-        provider?.loadMovies(page: 1, completionHadler: { result in
+        providerMovies?.loadMovies(id: nil, page: page, completionHadler: { result in
             switch result {
             case.failure(_):
-                print("Return error to presenter")
+                print("Retornar error hacia arriba al presenter...")
                 break
             case.success(let movieResponse):
-                self.presenter?.getDataMovies(movies: movieResponse.movies ?? [Movie]())
+                self.presenter?.getDataMovies(movies: movieResponse.movies ?? [Movie](), page: movieResponse.page ?? 1, totalPage: movieResponse.totalPages ?? 10)
             }
 
         })
-
     }
-
 }

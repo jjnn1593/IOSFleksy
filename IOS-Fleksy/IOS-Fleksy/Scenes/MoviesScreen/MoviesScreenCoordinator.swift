@@ -14,11 +14,10 @@ final class MoviesScreenCoordinator: ModuleCoordinator {
     typealias Presenter = MoviesScreenPresenterImpl
     typealias Interactor = MoviesScreenInteractorImpl
 
-    func navigationBuild() -> NavigationView<ContentView> {
-        NavigationView {
-           build()
-        }
-    }
+    static var shared: MoviesScreenCoordinator = {
+        let instance = MoviesScreenCoordinator()
+        return instance
+    }()
 
     func build() -> ContentView {
         let presenter = Presenter()

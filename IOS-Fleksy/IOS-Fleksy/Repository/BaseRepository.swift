@@ -35,5 +35,23 @@ extension BaseRepository {
         }
     }
 
+    func execute<Data>(endpoint: APICall, queue: DispatchQueue, retries: Int) -> AnyPublisher<Data, Error> {
+        do {
+            return session.dataTaskPublisher(for: try endpoint.urlRequest(baseURL: baseURL))
+                .tryMap {
+                    guard let response = $0.response as? HTTPURLResponse, response.statusCode == 200 else {
+                        throw APIError.unexpectedResponse
+                    }
+                    return $0.data as! Data
+                }
+                .receive(on: queue)
+                .retry(retries)
+                .eraseToAnyPublisher()
+
+        } catch let error {
+            return Fail<Data, Error>(error: error).eraseToAnyPublisher()
+        }
+    }
+
 }
 
